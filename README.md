@@ -5,7 +5,7 @@
 
 ---
 
-## ✨ Key Features
+## Key Features
 - **Custom Fine-Tuned Model**: Fine-tuned YOLOv8 on marine datasets to handle degraded visibility and ambient light shifts underwater.
 - **Interactive Target Locking**: Real-time OpenCV click-to-lock feature that allows users to isolate and track a specific fish's movement path.
 - **Dynamic Path Trajectory**: Visualizes long-range motion history for selected marine organisms.
@@ -13,7 +13,7 @@
 
 ---
 
-## 🛠️ Project Structure
+## Project Structure
 ```text
 Kadal-Vizhi/
 ├── dataset/                  # Marine images (train/val) & bounding box annotations
