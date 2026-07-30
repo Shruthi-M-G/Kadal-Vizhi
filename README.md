@@ -13,14 +13,19 @@
 
 ---
 
-## Project Structure
-```text
+### Project Structure
+
 Kadal-Vizhi/
-├── dataset/                  # Marine images (train/val) & bounding box annotations
-├── runs/                     # Model metrics & trained weights (best.pt)
-├── supervised.py             # Main entry point: Interactive GUI tracking pipeline
-├── train.py                  # Model fine-tuning configuration script
-├── custom_tracker.yaml       # BoT-SORT tracking hyperparameter settings
-├── data.yaml                 # YOLO dataset path configurations
-├── video.mp4                 # Sample input underwater stream
+├── scripts/
+│   ├── supervised.py        # Main entry point: Interactive tracking GUI
+│   ├── unsupervised.py      # Automated tracking script
+│   ├── tracking_script.py   # Tracker logic implementation
+│   ├── train.py             # Model fine-tuning configuration script
+│   └── convert.py           # Annotation / Dataset conversion utility
+├── configs/
+│   ├── data.yaml            # YOLO dataset path configurations
+│   └── custom_tracker.yaml  # BoT-SORT tracking settings
+├── outputs/                 # Save folder for tracked output videos
+├── .gitignore
+├── LICENSE
 └── README.md
